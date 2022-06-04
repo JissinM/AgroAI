@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<style>
+.textbox {
+    height: 45px;
+    width: 300px;
+    border: solid 1px #E5E5E5;
+	margin-left:25%;
+    outline: 0;
+	border-radius: 15px 50px 30px;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    background: #FFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFF), color-stop(4%, #EEE), to(#FFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+ .textbox :focus {  
+	border-color: #C9C9C9;  
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+	} 
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.btn-group button {
+  background-color: #04AA6D; 
+  border: 1px solid green;
+  width:299px;  
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer;
+  float: left; 
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style>
+<title>AgroAI | Home </title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Germinate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+<!-- //js -->
+<link href="css/mislider.css" rel="stylesheet" type="text/css" />
+<link href="css/mislider-custom.css" rel="stylesheet" type="text/css" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+ <script>  
+    function login(){
+        var text = document.getElementById("email").value;
+		var text1 = document.getElementById("password").value;
+		console.log(text)
+		console.log(text)
+		var u = "admin@gmail.com";
+		var p ="admin";
+		if ((text == "") || (text1 == "")){
+			alert("Please fill all the fields");
+		}	
+        else if ((text == u) && (text1 == p)) {
+            window.location.href="home.html"
+        }
+        else{
+            swal("Oops!", "Something went wrong, you should try again!", "error");  
+        }
+    }
+function one(){
+swal("Oops!", "You need to login first, create an account and try again!", "error");  
+}
+</script>
+</head>
+	
+<body>
+
+<body>
+<!-- banner -->
+<div class="banner">
+		<div class="container">
+			<div class="w3_agileits_banner_main_grid">
+				<div class="w3_agile_logo">
+					<h1><a href="index.html"><span>A</span>gro AI<i>Grow healthy products</i></a></h1>
+				</div>
+			</div>
+			<div class="w3_banner_info">
+				<div class="w3_banner_info_grid">
+					<h3 class="test">An AI Based Farmers Assistant System</h3>
+					<p>A simple ML and DL based website which recommends the best crop to grow, Yield Prediction and the 
+						Diseases caught by your crops.</p>
+					<ul>
+						<li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+						<li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="thim-click-to-bottom">
+				<a href="#welcome_bottom" class="scroll">
+					<i class="fa  fa-chevron-down"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+<!-- banner -->
+<!---728x90--->
+
+
+
+<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" style="background-image:url('images/8.jpg')">
+				<div class="modal-header" style="background-color:#a4dd25">
+					Sign In
+					<button  type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body"><br><br>
+    <input class="textbox" type="email"  placeholder="Enter Email" id="email" required on><br><br>
+	<input class="textbox" type="password"  placeholder="Enter Password" id="password" required><br><br>
+
+	<a href="#" style="margin-left:230px;">Forgot Password</a><br><br>
+	
+	<div class="btn-group">
+    <button type="submit" onclick="login()">Login</button>
+	<button type="submit" style="background-color:#ff0000;"onclick="clear()">Clear</button><br><br>
+    </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+<!-- #354230 bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" style="background-image:url('images/8.jpg')">
+				<div class="modal-header" style="background-color:#a4dd25">
+					Sign Up
+					<button  type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body"><br><br>
+    <input class="textbox" type="text" placeholder="Enter Username" name="uname" required><br><br>
+    <input class="textbox" type="email" placeholder="Enter Email" name="psw" required><br><br>
+	<input class="textbox" type="email" placeholder="Enter Mobile Number" name="psw" required><br><br>
+	<input class="textbox" type="password" placeholder="Enter Password" name="psw" required><br><br>
+    <input class="textbox" type="password" placeholder="Re-enter Password" name="psw" required><br><br>	
+	<div class="btn-group">
+    <button type="submit" >Register</button>
+	<button type="submit" style="background-color:#ff0000;">Clear</button><br><br>
+    </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<a href="#"onclick="one()"><div class="col-md-4 agileits_banner_bottom_left">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-pagelines" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>Free Consultation</h4>
+						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div></a>
+		<a href="#"onclick="one()"><div class="col-md-4 agileits_banner_bottom_left1">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-certificate" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>Certified Products</h4>
+						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div></a>
+		<div class="col-md-4 agileits_banner_bottom_left2">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-yelp" aria-hidden="true"></i>
+						</div>
+					</div>
+					<a href="#"onclick="one()"><div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>Free Helpline</h4>
+						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div></a>
+		<div class="clearfix"> </div>
+	</div>
+
+<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+<!-- mislider -->
+	<script src="js/mislider.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        jQuery(function ($) {
+            var slider = $('.mis-stage').miSlider({
+                //  The height of the stage in px. Options: false or positive integer. false = height is calculated using maximum slide heights. Default: false
+                stageHeight: 380,
+                //  Number of slides visible at one time. Options: false or positive integer. false = Fit as many as possible.  Default: 1
+                slidesOnStage: false,
+                //  The location of the current slide on the stage. Options: 'left', 'right', 'center'. Defualt: 'left'
+                slidePosition: 'center',
+                //  The slide to start on. Options: 'beg', 'mid', 'end' or slide number starting at 1 - '1','2','3', etc. Defualt: 'beg'
+                slideStart: 'mid',
+                //  The relative percentage scaling factor of the current slide - other slides are scaled down. Options: positive number 100 or higher. 100 = No scaling. Defualt: 100
+                slideScaling: 150,
+                //  The vertical offset of the slide center as a percentage of slide height. Options:  positive or negative number. Neg value = up. Pos value = down. 0 = No offset. Default: 0
+                offsetV: -5,
+                //  Center slide contents vertically - Boolean. Default: false
+                centerV: true,
+                //  Opacity of the prev and next button navigation when not transitioning. Options: Number between 0 and 1. 0 (transparent) - 1 (opaque). Default: .5
+                navButtonsOpacity: 1,
+            });
+        });
+    </script>
+<!-- //mislider -->
+<!-- text-effect -->
+		<script type="text/javascript" src="js/jquery.transit.js"></script> 
+		<script type="text/javascript" src="js/jquery.textFx.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$('.test').textFx({
+						type: 'fadeIn',
+						iChar: 100,
+						iAnim: 1000
+					});
+			});
+		</script>
+<!-- //text-effect -->
+<!-- menu -->
+	<script>
+		$(function() {
+			
+			initDropDowns($("div.shy-menu"));
+
+		});
+
+		function initDropDowns(allMenus) {
+
+			allMenus.children(".shy-menu-hamburger").on("click", function() {
+				
+				var thisTrigger = jQuery(this),
+					thisMenu = thisTrigger.parent(),
+					thisPanel = thisTrigger.next();
+
+				if (thisMenu.hasClass("is-open")) {
+
+					thisMenu.removeClass("is-open");
+
+				} else {			
+					
+					allMenus.removeClass("is-open");	
+					thisMenu.addClass("is-open");
+					thisPanel.on("click", function(e) {
+						e.stopPropagation();
+					});
+				}
+				
+				return false;
+			});
+		}
+	</script>
+<!-- //menu -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+
+</html>
